@@ -118,7 +118,7 @@ const AddReminder: FC = () => {
             let parsed = JSON.parse(details)
             axios({
                 method:"get",
-                url:`${address}app/todaysData.php`,
+                url:`${address}app/allData.php`,
                 params:{
                     allData:1,
                     user_id:parsed.id
@@ -162,12 +162,12 @@ const AddReminder: FC = () => {
             </form>
             <div className="d-flex flex-row justify-content-center text-center">
                 <div className="">
-                    <button className="btn btn-primary"><a href="app_two" className="text-light">All Tasks</a></button>
+                    <button className="btn btn-primary"><a href="/app" className="text-light">Todays Tasks</a></button>
                 </div>
             </div>
             <div className="d-flex flex-row align-items-center " >
                 <div>
-                <h1>Todays Tasks</h1>
+                <h1>All Tasks</h1>
                 <p>{message}</p>
                 </div>
                

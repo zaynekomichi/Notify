@@ -1,0 +1,1 @@
+export const address:string = "http://127.0.0.1/NotifyBackend/"

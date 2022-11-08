@@ -1,7 +1,7 @@
-import AddReminder from "../Components/App";
+import AddReminder from "../Components/allTasks";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router";
-const Home=()=>{
+const HomeTwo=()=>{
     const navigate= useNavigate()
     const [userDetails,setDetails] = useState({
         user:"",
@@ -40,4 +40,4 @@ const Home=()=>{
     )
 }
 
-export default Home;
+export default HomeTwo;
